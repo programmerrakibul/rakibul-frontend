@@ -10,8 +10,11 @@ import Logo from "./logo";
 import EnrollButton from "./enroll-button";
 import Container from "./container";
 import { Separator } from "./separator";
-
 import type { TNavLink } from "@/types";
+import Image from "next/image";
+import MenuBlack from "@/assets/icons/black/line/menu_black.png";
+import MenuWhite from "@/assets/icons/white/line/menu_white.png";
+import { useTheme } from "next-themes";
 
 const navLinks: TNavLink[] = [
   { href: "#overview", label: "Overview" },
@@ -20,8 +23,10 @@ const navLinks: TNavLink[] = [
   { href: "#pricing", label: "Pricing" },
 ];
 
-export default function Navbar() {
+const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
   const NavLinkElements = navLinks.map((link) => (
     <Link
@@ -56,7 +61,12 @@ export default function Navbar() {
                     size="icon"
                     className="md:hidden bg-secondary size-12 rounded-full"
                   >
-                    <Menu className="size-6" />
+                    <Image
+                      src={isDark ? MenuWhite : MenuBlack}
+                      alt="Hamburger Menu Icon Image"
+                      width={24}
+                      height={24}
+                    />
                   </Button>
                 }
               />
@@ -77,4 +87,6 @@ export default function Navbar() {
       />
     </section>
   );
-}
+};
+
+export default Navbar;
