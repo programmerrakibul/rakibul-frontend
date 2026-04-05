@@ -1,7 +1,9 @@
+import HomePage from "@/components/pages/home/home";
+
 const Home = () => {
   return (
     <>
-      <h1>Hello</h1>
+      <HomePage />
     </>
   );
 };

@@ -3,3 +3,8 @@ export interface TNavLink {
   href: string;
   label: string;
 }
+
+export interface TypographyProps {
+  children: React.ReactNode;
+  className?: string;
+}
