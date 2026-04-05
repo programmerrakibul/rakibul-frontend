@@ -14,7 +14,14 @@ const Logo = () => {
   return (
     <>
       <Link href={"/"}>
-        <Image src={logo} alt="PPA Logo" width={84} height={31} className="flex w-16 lg:w-20" />
+        <Image
+          loading="eager"
+          src={logo}
+          alt="PPA Logo"
+          width={84}
+          height={31}
+          className="flex w-16 lg:w-20"
+        />
       </Link>
     </>
   );
