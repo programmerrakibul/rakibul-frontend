@@ -4,7 +4,14 @@ import type { TypographyProps } from "@/types";
 const TypographyH3 = ({ children, className }: TypographyProps) => {
   return (
     <>
-      <h3 className={cn(className, "text-[28px] font-medium")}>{children}</h3>
+      <h3
+        className={cn(
+          className,
+          "text-[28px] font-medium text-foreground text-center",
+        )}
+      >
+        {children}
+      </h3>
     </>
   );
 };

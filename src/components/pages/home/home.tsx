@@ -1,11 +1,11 @@
 import Banner from "./banner";
-import Problem from "./problem";
+import PainPoints from "./pain-points";
 
 const HomePage = () => {
   return (
     <>
       <Banner />
-      <Problem />
+      <PainPoints />
     </>
   );
 };
