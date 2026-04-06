@@ -5,9 +5,10 @@ const TypographyH1 = ({ children, className }: TypographyProps) => {
   return (
     <>
       <h1
+        role="heading"
         className={cn(
-          className,
           "text-[32px] sm:text-[42px] md:text-[52px] font-medium text-center text-foreground",
+          className,
         )}
       >
         {children}

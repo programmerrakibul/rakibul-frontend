@@ -7,7 +7,7 @@ const TypographyH2 = ({ children, className }: TypographyProps) => {
       <h2
         className={cn(
           className,
-          "text-[40px] font-medium text-center text-foreground",
+          "text-[28px] md:text-[40px] font-medium text-center text-foreground",
         )}
       >
         {children}
