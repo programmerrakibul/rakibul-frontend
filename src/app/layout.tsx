@@ -48,7 +48,7 @@ const RootLayout = ({
         <ThemeProvider>
           <Navbar />
 
-          {children}
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>

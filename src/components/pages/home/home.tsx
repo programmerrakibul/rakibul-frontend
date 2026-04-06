@@ -1,4 +1,5 @@
 import Banner from "./banner";
+import Benefits from "./benefits";
 import PainPoints from "./pain-points";
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <Banner />
       <PainPoints />
+      <Benefits />
     </>
   );
 };
