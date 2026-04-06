@@ -149,7 +149,7 @@ const Curriculum = () => {
               ))}
             </Accordion>
 
-            <Card className="p-8 border-[0.5px] border-primary/25 lg:flex-1 lg:sticky lg:top-16 mx-auto">
+            <Card className="p-8 ring-primary/25 lg:flex-1 lg:sticky lg:top-16 mx-auto">
               <CardHeader>
                 <CardTitle className="text-2xl">
                   Not only video lessons!
@@ -157,7 +157,7 @@ const Curriculum = () => {
               </CardHeader>
               <CardContent>
                 {benefitDescriptions.map((description, index) => (
-                  <Item key={index} className="flex items-center gap-6 px-0">
+                  <Item key={index} className="flex items-center gap-3 px-0">
                     <ItemMedia variant={"icon"}>
                       <AspectRatio
                         ratio={1 / 1}
@@ -172,7 +172,9 @@ const Curriculum = () => {
                       </AspectRatio>
                     </ItemMedia>
                     <ItemContent>
-                      <ItemDescription>{description}</ItemDescription>
+                      <ItemDescription className="text-sm">
+                        {description}
+                      </ItemDescription>
                     </ItemContent>
                   </Item>
                 ))}
