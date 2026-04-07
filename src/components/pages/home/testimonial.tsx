@@ -1,7 +1,6 @@
 "use client";
 
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -22,7 +21,7 @@ import TypographyH1 from "@/components/ui/typography-h1";
 import { testimonialsData } from "@/data/testimonialsData";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import PlayIcon from "@/assets/icons/primary/play.png";
+import PlayButton from "@/components/ui/play-button";
 
 const Testimonial = () => {
   return (
@@ -74,21 +73,7 @@ const Testimonial = () => {
                           className="absolute top-0 left-0 w-full h-full object-cover z-0"
                         />
                         <div className="hidden absolute top-0 left-0 w-full h-full bg-white/25 dark:bg-black/25 z-10"></div>
-                        <Button
-                          variant={"secondary"}
-                          size={"icon"}
-                          className={
-                            "absolute top-[50%] left-[40%] -translate-y-[40%] size-12 sm:size-17.5 md:size-22 rounded-full bg-white ring-4 ring-white/40 hover:bg-white/85 z-20"
-                          }
-                        >
-                          <Image
-                            src={PlayIcon}
-                            alt="Play Icon"
-                            width={24}
-                            height={24}
-                            className="size-6 sm:size-8 md:size-10"
-                          />
-                        </Button>
+                        <PlayButton className="absolute top-[50%] left-[40%] -translate-y-[40%]" />
                       </>
                     )}
                     <CardHeader className="px-6 pt-8 z-10">

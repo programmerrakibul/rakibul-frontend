@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import EnrollButton from "@/components/ui/enroll-button";
@@ -7,8 +5,8 @@ import TypographyH1 from "@/components/ui/typography-h1";
 import Image from "next/image";
 import BannerThumbnail from "@/assets/images/banner_thumbnail .png";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import PlayIcon from "@/assets/icons/primary/play.png";
 import HeaderBadge from "@/components/ui/header-badge";
+import PlayButton from "@/components/ui/play-button";
 
 const Banner = () => {
   return (
@@ -43,21 +41,7 @@ const Banner = () => {
                 loading="eager"
               />
             </AspectRatio>
-            <Button
-              variant={"secondary"}
-              size={"icon"}
-              className={
-                "absolute top-[50%] left-[50%] -translate-y-[50%] size-12 sm:size-17.5 md:size-22 rounded-full bg-white ring-4 ring-white/40 hover:bg-white/85"
-              }
-            >
-              <Image
-                src={PlayIcon}
-                alt="Play Icon"
-                width={24}
-                height={24}
-                className="size-6 sm:size-8 md:size-10"
-              />
-            </Button>
+            <PlayButton className="absolute top-[50%] left-[50%] -translate-y-[50%]" />
           </div>
         </Container>
       </section>
