@@ -49,8 +49,8 @@ const Curriculum = () => {
 
   return (
     <>
-      <section>
-        <Container className="space-y-20">
+      <section className="mt-60">
+        <Container className="space-y-25">
           <div className="max-w-136.25 mx-auto text-center space-y-8">
             <HeaderBadge>Course Curriculum</HeaderBadge>
             <TypographyH2>
@@ -58,7 +58,7 @@ const Curriculum = () => {
             </TypographyH2>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-14">
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-25 sm:gap-30 lg:gap-15">
             <Accordion
               type="single"
               defaultValue={curriculumData[0].id}
@@ -141,13 +141,13 @@ const Curriculum = () => {
               ))}
             </Accordion>
 
-            <Card className="p-8 ring-primary/25 lg:flex-1 lg:sticky lg:top-16 mx-auto">
+            <Card className="py-10 px-8 gap-16 ring-primary/25 lg:flex-1 lg:sticky lg:top-16 mx-auto">
               <CardHeader>
                 <CardTitle className="text-2xl">
                   Not only video lessons!
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-6 sm:space-y-7.5">
                 {benefitDescriptions.map((description, index) => (
                   <Item key={index} className="flex items-center gap-3 px-0">
                     <ItemMedia variant={"icon"}>
@@ -164,7 +164,7 @@ const Curriculum = () => {
                       </AspectRatio>
                     </ItemMedia>
                     <ItemContent>
-                      <ItemDescription className="text-sm">
+                      <ItemDescription className="text-[15px]">
                         {description}
                       </ItemDescription>
                     </ItemContent>

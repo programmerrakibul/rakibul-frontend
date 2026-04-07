@@ -57,9 +57,9 @@ const avatarDetails: ImgDetails[] = [
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className="bg-secondary mt-30">
         <Container>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-20">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 py-20">
             <div>
               <TypographyH2 className="md:text-start">
                 The Deep <br /> Work Blueprint
@@ -104,9 +104,9 @@ const Footer = () => {
             </Card>
           </div>
 
-          <Separator className={"mb-8"} />
+          <Separator />
 
-          <div className="text-muted-foreground flex flex-col lg:flex-row-reverse items-center justify-between gap-6">
+          <div className="text-muted-foreground flex flex-col lg:flex-row-reverse items-center justify-between gap-10 py-8">
             <div className="flex items-center flex-wrap justify-evenly gap-8">
               {links.map((link, i) => (
                 <Link

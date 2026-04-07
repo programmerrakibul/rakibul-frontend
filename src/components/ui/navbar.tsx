@@ -31,7 +31,7 @@ const Navbar = () => {
     <Link
       key={link.label}
       href={link.href}
-      className="text-base font-medium text-foreground/90 transition-colors hover:text-foreground"
+      className="text-[15px] font-medium text-foreground/90 transition-colors hover:text-foreground"
     >
       {link.label}
     </Link>
@@ -40,17 +40,17 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-xl">
       <Container>
-        <nav className="flex h-16 items-center justify-between">
+        <nav className="flex h-23 lg:h-23.75 items-center justify-between">
           <Logo />
 
-          <div className="hidden items-center gap-x-10 md:flex">
+          <div className="hidden items-center gap-x-10 lg:flex">
             {NavLinkElements}
           </div>
 
           <div className="flex items-center gap-4">
             <ThemeToggle />
 
-            <EnrollButton size={"lg"} className="hidden md:inline-flex" />
+            <EnrollButton size={"lg"} className="hidden lg:inline-flex" />
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger
@@ -58,13 +58,13 @@ const Navbar = () => {
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="md:hidden bg-secondary size-12 rounded-full"
+                    className="lg:hidden bg-secondary size-15 rounded-full"
                   >
                     <Image
                       src={isDark ? MenuWhite : MenuBlack}
                       alt="Hamburger Menu Icon Image"
-                      width={24}
-                      height={24}
+                      width={28}
+                      height={28}
                     />
                   </Button>
                 }

@@ -13,14 +13,16 @@ const Banner = () => {
     <>
       <section className="relative banner_texture">
         <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b from-background to-primary/75 from-30% to-100% z-0"></div>
-        <Container className="flex flex-col items-center gap-16 pt-28 pb-8 md:pb-14 z-10">
+        <Container className="flex flex-col items-center gap-15 pt-41.5 sm:pt-40.25 md:pt-35.25 lg:pt-35 pb-4 sm:pb-5 md:pb-7 lg:pb-15 z-10">
           <div className="space-y-8 z-10">
-            <div className="mx-auto max-w-145 space-y-5 text-center">
-              <HeaderBadge>30% off until 4d : 2h : 41m : 17s</HeaderBadge>
+            <div className="mx-auto max-w-145 text-center">
+              <HeaderBadge className="mb-6">
+                30% off until 4d : 2h : 41m : 17s
+              </HeaderBadge>
               <TypographyH1>
                 Master Focus & Get More Done in Less Time
               </TypographyH1>
-              <p className="opacity-80">
+              <p className="opacity-80 mt-5">
                 A step-by-step system to eliminate procrastination, train your
                 brain for deep work, and boost productivity effortlessly.
               </p>

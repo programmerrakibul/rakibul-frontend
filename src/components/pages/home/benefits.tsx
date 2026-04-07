@@ -51,8 +51,8 @@ const Benefits = () => {
 
   return (
     <>
-      <section className="py-16 sm:py-20">
-        <Container className="space-y-24">
+      <section className="mt-60">
+        <Container className="space-y-40">
           <div className="space-y-8 max-w-150 mx-auto text-center">
             <HeaderBadge>The Deep Work Blueprint</HeaderBadge>
             <TypographyH2>
@@ -64,7 +64,7 @@ const Benefits = () => {
             {benefitsData.map((benefit, i) => (
               <div
                 key={i}
-                className="flex items-stretch justify-between gap-8 sm:gap-14 max-w-95"
+                className="flex px-5 py-2.5 items-stretch justify-between gap-8 sm:gap-15 max-w-95"
               >
                 <div className="flex items-center justify-center flex-col gap-4">
                   <span className="flex items-center justify-center bg-primary size-5 rounded-full"></span>

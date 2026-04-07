@@ -7,8 +7,6 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
 const sf = localFont({
   src: [
     {
@@ -31,16 +29,6 @@ const sf = localFont({
   display: "swap",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: {
     template: "%s | PPA",
@@ -58,21 +46,14 @@ const RootLayout = ({
   return (
     <html
       lang="en"
-      className={cn(
-        "antialiased",
-        geistSans.variable,
-        geistMono.variable,
-        "font-sans",
-        inter.variable,
-        sf.variable,
-      )}
+      className={cn("antialiased", sf.variable)}
       suppressHydrationWarning
     >
       <body>
         <ThemeProvider>
           <Navbar />
 
-          <main className="space-y-16 sm:space-y-20">{children}</main>
+          <main>{children}</main>
 
           <Footer />
         </ThemeProvider>

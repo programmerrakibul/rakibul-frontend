@@ -45,7 +45,7 @@ const imgDetails: ImgDetails[] = [
 const PainPoints = () => {
   return (
     <section className="py-20 md:py-24 lg:py-28">
-      <Container className="space-y-20">
+      <Container className="space-y-40 md:space-y-50">
         <div className="flex flex-col items-center justify-items-center gap-8">
           <div className="text-center mx-auto max-w-205 space-y-8">
             <HeaderBadge>Are Distractions Holding You Back?</HeaderBadge>
@@ -91,10 +91,10 @@ const PainPoints = () => {
             </AspectRatio>
           </div>
 
-          <div className="col-span-full lg:col-span-8 bg-secondary rounded-3xl p-6 sm:p-10 space-y-20">
-            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+          <div className="col-span-full lg:col-span-8 bg-secondary rounded-3xl py-10 px-8 sm:p-10 space-y-20">
+            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-6">
               <HeaderBadge>No worries</HeaderBadge>
-              <div className="space-y-2">
+              <div className="space-y-2.25">
                 <AvatarGroup className="sm:justify-end">
                   {imgDetails.slice(4, 7).map((img, i) => (
                     <Avatar key={i} size="lg">
@@ -108,12 +108,13 @@ const PainPoints = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
-              <div className="flex-1 space-y-5">
+            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-10">
+              <div className="flex-1 space-y-8.5">
                 <p className="opacity-80 text-[17px]">
                   The ability to concentrate deeply is the ultimate productivity
                   hack
                 </p>
+
                 <TypographyH3 className="text-start!">
                   And fortunately it’s a skill you can train & develop.
                 </TypographyH3>

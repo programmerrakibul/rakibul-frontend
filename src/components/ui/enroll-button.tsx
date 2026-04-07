@@ -10,7 +10,7 @@ interface EnrollButtonProps {
 const EnrollButton = ({ className, size = "lg" }: EnrollButtonProps) => {
   return (
     <>
-      <Button className={cn(className)} size={size}>
+      <Button className={cn("text-[17px]", className)} size={size}>
         Enroll now
       </Button>
     </>

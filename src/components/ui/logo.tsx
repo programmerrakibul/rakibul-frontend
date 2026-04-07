@@ -20,7 +20,7 @@ const Logo = () => {
           alt="PPA Logo"
           width={84}
           height={31}
-          className="flex w-16 lg:w-20"
+          className="flex w-21"
         />
       </Link>
     </>

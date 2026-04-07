@@ -26,9 +26,9 @@ import { TypographyH1 } from "@/components/ui/typography";
 const Testimonial = () => {
   return (
     <>
-      <section>
-        <Container className="space-y-20">
-          <div className="max-w-120 mx-auto text-center py-24">
+      <section className="mt-50 md:mt-60">
+        <Container className="space-y-40">
+          <div className="max-w-120 mx-auto text-center space-y-6">
             <HeaderBadge>Testimonials</HeaderBadge>
             <TypographyH1>Real Results from Real People</TypographyH1>
           </div>
