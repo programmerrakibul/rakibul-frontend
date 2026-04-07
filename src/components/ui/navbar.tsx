@@ -16,10 +16,10 @@ import MenuWhite from "@/assets/icons/white/line/menu_white.png";
 import { useTheme } from "next-themes";
 
 const navLinks: TNavLink[] = [
-  { href: "#overview", label: "Overview" },
-  { href: "#curriculum", label: "Curriculum" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "#", label: "Overview" },
+  { href: "#", label: "Curriculum" },
+  { href: "#", label: "Testimonials" },
+  { href: "#", label: "Pricing" },
 ];
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
   ));
 
   return (
-    <section className="sticky top-0 z-50 bg-background/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-xl">
       <Container>
         <nav className="flex h-16 items-center justify-between">
           <Logo />
@@ -80,7 +80,7 @@ const Navbar = () => {
         </nav>
       </Container>
       <Separator />
-    </section>
+    </header>
   );
 };
 

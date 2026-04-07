@@ -36,7 +36,6 @@ const RootLayout = ({
     <html
       lang="en"
       className={cn(
-        "h-full",
         "antialiased",
         geistSans.variable,
         geistMono.variable,
