@@ -104,11 +104,7 @@ const Footer = () => {
             </Card>
           </div>
 
-          <Separator
-            className={
-              "mb-8 bg-linear-to-r from-background via-primary/80 to-background"
-            }
-          />
+          <Separator className={"mb-8"} />
 
           <div className="text-muted-foreground flex flex-col lg:flex-row-reverse items-center justify-between gap-6">
             <div className="flex items-center flex-wrap justify-evenly gap-8">

@@ -79,11 +79,7 @@ const Navbar = () => {
           </div>
         </nav>
       </Container>
-      <Separator
-        className={
-          "bg-linear-to-l from-background via-primary/85 to-background"
-        }
-      />
+      <Separator />
     </section>
   );
 };

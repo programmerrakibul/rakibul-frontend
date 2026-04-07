@@ -70,7 +70,7 @@ const Benefits = () => {
                   <span className="flex items-center justify-center bg-primary size-5 rounded-full"></span>
                   <Separator
                     className={
-                      "bg-linear-to-b from-transparent via-primary to-transparent w-0.5 flex-1 mx-auto"
+                      "bg-linear-to-b w-0.5 flex-1 mx-auto"
                     }
                     orientation="vertical"
                   />

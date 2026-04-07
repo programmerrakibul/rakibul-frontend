@@ -79,11 +79,7 @@ const Curriculum = () => {
                     </div>
                   </AccordionTrigger>
 
-                  <Separator
-                    className={
-                      "bg-linear-to-r from-background via-primary to-background from-10% via-50% to-90%"
-                    }
-                  />
+                  <Separator />
 
                   <AccordionContent className="p-6">
                     <div className="space-y-4">
@@ -136,11 +132,7 @@ const Curriculum = () => {
                               </span>
                             </div>
                           </div>
-                          <Separator
-                            className={
-                              "bg-linear-to-r from-background via-primary to-background from-10% via-50% to-90%"
-                            }
-                          />
+                          <Separator />
                         </div>
                       ))}
                     </div>
