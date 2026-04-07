@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PPA - Landing Page
 
-## Getting Started
+A modern, high-converting landing page for **PPA** online course. Built with
+Next.js, React, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Overview
+
+This is a sales funnel landing page for a self-paced productivity course
+designed to help professionals master focus, eliminate procrastination, and
+boost deep work capabilities. The course includes 4 modules with 6+ hours of
+video content and live Q&A sessions.
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the landing page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js 16 with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4 + PostCSS
+- **UI Components:** shadcn/ui + Base UI
+- **Carousel:** Embla Carousel
+- **Theme:** next-themes (dark/light mode)
+- **Icons:** Lucide React
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/              # Next.js pages and layout
+├── components/
+│   ├── pages/home/   # Homepage sections (banner, benefits, curriculum, testimonials)
+│   ├── ui/           # Reusable UI components
+│   └── providers/    # Theme provider
+├── data/             # Course and testimonial data
+├── assets/           # Images and icons
+├── lib/              # Utilities
+└── types/            # TypeScript definitions
+```
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ✨ Responsive design optimized for all devices
+- 🌓 Dark/light theme toggle
+- 📺 Interactive curriculum accordion
+- 🎠 Auto-playing testimonials carousel
+- 🎯 Conversion-focused CTA sections
+- ⚡ Optimized performance with Next.js 16
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Ready to deploy on Vercel or any Next.js-compatible hosting platform.
+
+```bash
+npm run build
+npm start
+```
