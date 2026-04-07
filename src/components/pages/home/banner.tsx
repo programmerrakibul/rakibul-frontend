@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import EnrollButton from "@/components/ui/enroll-button";
-import TypographyH1 from "@/components/ui/typography-h1";
 import Image from "next/image";
 import BannerThumbnail from "@/assets/images/banner_thumbnail .png";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import HeaderBadge from "@/components/ui/header-badge";
 import PlayButton from "@/components/ui/play-button";
+import { TypographyH1 } from "@/components/ui/typography";
 
 const Banner = () => {
   return (

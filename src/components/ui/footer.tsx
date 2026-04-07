@@ -8,7 +8,6 @@ import {
   CardHeader,
 } from "./card";
 import Container from "./container";
-import TypographyH2 from "./typography-h2";
 import img5 from "@/assets/images/p5.jpg";
 import img6 from "@/assets/images/p6.jpg";
 import img7 from "@/assets/images/p7.jpg";
@@ -19,6 +18,7 @@ import { Button } from "./button";
 import { Separator } from "./separator";
 import { TNavLink } from "@/types";
 import Link from "next/link";
+import { TypographyH2 } from "./typography";
 
 const links: TNavLink[] = [
   {

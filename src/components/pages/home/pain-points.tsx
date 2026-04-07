@@ -12,9 +12,8 @@ import img8 from "@/assets/images/p8.jpg";
 import img9 from "@/assets/images/p9.jpg";
 import img10 from "@/assets/images/p10.jpg";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import TypographyH2 from "@/components/ui/typography-h2";
 import { Avatar, AvatarGroup, AvatarImage } from "@/components/ui/avatar";
-import TypographyH3 from "@/components/ui/typography-h3";
+import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
 
 export interface ImgDetails {
   src: StaticImageData;

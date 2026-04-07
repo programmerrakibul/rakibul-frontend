@@ -2,7 +2,6 @@
 
 import Container from "@/components/ui/container";
 import HeaderBadge from "@/components/ui/header-badge";
-import TypographyH2 from "@/components/ui/typography-h2";
 import PlayPrimary from "@/assets/icons/primary/play.png";
 import PlayBlack from "@/assets/icons/black/fill/play_black.png";
 import { Badge } from "@/components/ui/badge";
@@ -35,6 +34,7 @@ import {
 } from "@/components/ui/item";
 import { useTheme } from "next-themes";
 import EnrollButton from "@/components/ui/enroll-button";
+import { TypographyH2 } from "@/components/ui/typography";
 
 const benefitDescriptions: string[] = [
   "6h of videos - Step-by-step deep work strategies.",
@@ -127,7 +127,7 @@ const Curriculum = () => {
                                   Preview
                                 </Badge>
                               )}
-                              <span className="text-xs text-muted-foreground font-mono tabular-nums">
+                              <span className="text-xs text-muted-foreground tabular-nums">
                                 {lesson.duration}
                               </span>
                             </div>

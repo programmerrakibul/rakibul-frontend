@@ -17,11 +17,11 @@ import {
 } from "@/components/ui/carousel";
 import Container from "@/components/ui/container";
 import HeaderBadge from "@/components/ui/header-badge";
-import TypographyH1 from "@/components/ui/typography-h1";
 import { testimonialsData } from "@/data/testimonialsData";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import PlayButton from "@/components/ui/play-button";
+import { TypographyH1 } from "@/components/ui/typography";
 
 const Testimonial = () => {
   return (

@@ -17,13 +17,13 @@ import {
   ItemDescription,
   ItemMedia,
 } from "@/components/ui/item";
-import TypographyH2 from "@/components/ui/typography-h2";
 import CheckBlack from "@/assets/icons/black/fill/check_black.png";
 import CheckWhite from "@/assets/icons/white/fill/check_white.png";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import EnrollButton from "@/components/ui/enroll-button";
+import { TypographyH2 } from "@/components/ui/typography";
 
 const ctaData: string[] = [
   "Bonus: 1:1 coaching session to boost focus.",

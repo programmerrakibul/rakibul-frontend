@@ -2,7 +2,6 @@
 
 import Container from "@/components/ui/container";
 import HeaderBadge from "@/components/ui/header-badge";
-import TypographyH2 from "@/components/ui/typography-h2";
 import BulbBlack from "@/assets/icons/black/fill/bulb_black.png";
 import BrainBlack from "@/assets/icons/black/fill/brain_black.png";
 import RouteBlack from "@/assets/icons/black/fill/route_black.png";
@@ -15,6 +14,7 @@ import { useTheme } from "next-themes";
 import Image, { type StaticImageData } from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { TypographyH2 } from "@/components/ui/typography";
 
 interface BenefitsData {
   icon: StaticImageData;
@@ -69,9 +69,7 @@ const Benefits = () => {
                 <div className="flex items-center justify-center flex-col gap-4">
                   <span className="flex items-center justify-center bg-primary size-5 rounded-full"></span>
                   <Separator
-                    className={
-                      "bg-linear-to-b w-0.5 flex-1 mx-auto"
-                    }
+                    className={"bg-linear-to-b w-0.5 flex-1 mx-auto"}
                     orientation="vertical"
                   />
                 </div>
