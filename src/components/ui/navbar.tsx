@@ -16,10 +16,10 @@ import MenuWhite from "@/assets/icons/white/line/menu_white.png";
 import { useTheme } from "next-themes";
 
 const navLinks: TNavLink[] = [
-  { href: "#", label: "Overview" },
-  { href: "#", label: "Curriculum" },
-  { href: "#", label: "Testimonials" },
-  { href: "#", label: "Pricing" },
+  { href: "#hero", label: "Overview" },
+  { href: "#curriculum", label: "Curriculum" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#pricing", label: "Pricing" },
 ];
 
 const Navbar = () => {

@@ -51,7 +51,7 @@ const Benefits = () => {
 
   return (
     <>
-      <section className="mt-60">
+      <section id='benefits' className="mt-60">
         <Container className="space-y-40">
           <div className="space-y-8 max-w-150 mx-auto text-center">
             <HeaderBadge>The Deep Work Blueprint</HeaderBadge>

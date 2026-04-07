@@ -141,7 +141,7 @@
   }
 
   html {
-    @apply font-sf;
+    @apply font-sf scroll-smooth;
   }
 
   button:not(:disabled),

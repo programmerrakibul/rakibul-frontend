@@ -44,7 +44,7 @@ const imgDetails: ImgDetails[] = [
 
 const PainPoints = () => {
   return (
-    <section className="py-20 md:py-24 lg:py-28">
+    <section id="pain-points" className="py-20 md:py-24 lg:py-28">
       <Container className="space-y-40 md:space-y-50">
         <div className="flex flex-col items-center justify-items-center gap-8">
           <div className="text-center mx-auto max-w-205 space-y-8">

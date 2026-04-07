@@ -49,7 +49,7 @@ const Curriculum = () => {
 
   return (
     <>
-      <section className="mt-60">
+      <section id="curriculum" className="mt-60">
         <Container className="space-y-25">
           <div className="max-w-136.25 mx-auto text-center space-y-8">
             <HeaderBadge>Course Curriculum</HeaderBadge>

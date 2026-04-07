@@ -40,7 +40,7 @@ const CTA = () => {
 
   return (
     <>
-      <section className="mt-30">
+      <section id="pricing" className="mt-30">
         <Container className="flex flex-col lg:flex-row items-stretch justify-between gap-6">
           <Card className="flex-1 justify-center py-10 px-8 sm:p-15 md:py-10 space-y-15 ring-0 shadow">
             <CardHeader className="grid-cols-1 place-items-start gap-5 px-0">
