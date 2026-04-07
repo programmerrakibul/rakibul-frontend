@@ -46,11 +46,3 @@ export const TypographyH3 = ({ children, className }: TypographyProps) => {
     </>
   );
 };
-
-export const TypographyH4 = ({ children, className }: TypographyProps) => {
-  return (
-    <>
-      <h4 className={cn("text-2xl font-normal", className)}>{children}</h4>
-    </>
-  );
-};
