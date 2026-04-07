@@ -16,7 +16,7 @@ import TypographyH2 from "@/components/ui/typography-h2";
 import { Avatar, AvatarGroup, AvatarImage } from "@/components/ui/avatar";
 import TypographyH3 from "@/components/ui/typography-h3";
 
-interface ImgDetails {
+export interface ImgDetails {
   src: StaticImageData;
   alt: string;
 }

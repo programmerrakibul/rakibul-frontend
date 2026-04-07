@@ -6,8 +6,8 @@ const TypographyH3 = ({ children, className }: TypographyProps) => {
     <>
       <h3
         className={cn(
-          className,
           "text-[28px] font-medium text-foreground text-center",
+          className,
         )}
       >
         {children}
