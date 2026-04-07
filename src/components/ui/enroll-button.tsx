@@ -7,7 +7,7 @@ interface EnrollButtonProps {
   size?: VariantProps<typeof Button>["size"];
 }
 
-const EnrollButton = ({ className, size = "default" }: EnrollButtonProps) => {
+const EnrollButton = ({ className, size = "lg" }: EnrollButtonProps) => {
   return (
     <>
       <Button className={cn(className)} size={size}>

@@ -27,7 +27,9 @@ const Banner = () => {
             </div>
             <div className="flex items-center justify-center gap-3">
               <EnrollButton />
-              <Button variant={"secondary"}>Curriculum</Button>
+              <Button size={"lg"} variant={"secondary"}>
+                Curriculum
+              </Button>
             </div>
           </div>
           <div className="w-full flex items-center justify-center relative">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -7,6 +8,28 @@ import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const sf = localFont({
+  src: [
+    {
+      path: "./fonts/SFPRODISPLAYREGULAR.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYBOLD.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYMEDIUM.otf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  variable: "--font-sf",
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +64,7 @@ const RootLayout = ({
         geistMono.variable,
         "font-sans",
         inter.variable,
+        sf.variable,
       )}
       suppressHydrationWarning
     >

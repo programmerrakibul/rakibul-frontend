@@ -29,7 +29,7 @@ const Navbar = () => {
 
   const NavLinkElements = navLinks.map((link) => (
     <Link
-      key={link.href}
+      key={link.label}
       href={link.href}
       className="text-base font-medium text-foreground/90 transition-colors hover:text-foreground"
     >

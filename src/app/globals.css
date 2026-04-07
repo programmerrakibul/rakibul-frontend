@@ -8,9 +8,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-geist-sans);
+  --font-sf: var(--font-sf);
+  --font-heading: var(--font-sf);
 
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -142,12 +141,12 @@
   }
 
   html {
-    @apply font-sans;
+    @apply font-sf;
   }
 
   button:not(:disabled),
   [role="button"]:not(:disabled) {
-    @apply cursor-pointer  dark:text-foreground!;
+    @apply cursor-pointer  dark:text-foreground! font-sf!;
   }
 
   :focus-visible {
